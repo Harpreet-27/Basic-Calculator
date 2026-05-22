@@ -1,0 +1,83 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color:darkgray;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 4px;
+}
+
+.container{
+    /* background: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main-content{
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(62, 60, 60, 0.879);
+}
+
+.button1{
+    width: 142px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid rgb(63, 62, 62);
+    border-radius: 9px;
+    cursor: pointer; 
+    background-color: rgba(203, 152, 115, 0.943);
+    font-size: 1.3rem;
+}
+
+.button{
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid rgb(63, 62, 62);
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: rgba(203, 152, 115, 0.943);
+    font-size: 1.3rem;
+}
+
+.row{
+    margin: 8px 0;
+}
+
+.row input{
+    font-size: 20px;
+    width: 290px;
+    margin-left: 4px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+@keyframes pressEffect {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.92);
+        box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.button1:active{
+    animation: pressEffect 0.12s ease-out;
+}
+
+.button:active{
+    animation: pressEffect 0.12s ease-out;
+}
